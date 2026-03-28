@@ -1,2 +1,5 @@
 # Restaurant website
-[An intermediate JS exercise from the Odin Project.](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page) The focus of this project was in getting an understanding of creating a complete project with the Webpack bundler.
+[An intermediate JS exercise from the Odin Project.](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page) The focus of this project was in getting an understanding of creating a complete project with the [Webpack bundler](https://webpack.js.org/).
+
+## Features
+* Website with a tab navigation
