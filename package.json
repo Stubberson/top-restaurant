@@ -1,0 +1,27 @@
+{
+  "name": "top-restaurant",
+  "version": "1.0.0",
+  "description": "[An intermediate JS exercise from the Odin Project.](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page) The focus of this project was in getting an understanding of creating a complete project with the Webpack bundler.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stubberson/top-restaurant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Stubberson/top-restaurant/issues"
+  },
+  "homepage": "https://github.com/Stubberson/top-restaurant#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.6",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.3"
+  }
+}
