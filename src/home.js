@@ -7,16 +7,17 @@ export function homePage() {
         content.removeChild(content.lastChild)
     }
 
+    const text = document.createElement('div')
     const header = document.createElement('h1')
-    const image = document.createElement('img')
     const paragraph = document.createElement('p')
-
+    const image = document.createElement('img')
 
     header.innerText = 'Restaurant Schöneberg'
     image.src = restaurantImg
-    paragraph.innerText = 'The best restaurant in Schöneberg, lecker Essen, lecker Bierchen, lecker Leute!'
+    paragraph.innerText = 'The best restaurant in Schöneberg, lecker Essen, leckere Bierchen, leckere Leute!'
 
-    content.appendChild(header)
+    text.appendChild(header)
+    text.appendChild(paragraph)
+    content.appendChild(text)
     content.appendChild(image)
-    content.appendChild(paragraph)
 }

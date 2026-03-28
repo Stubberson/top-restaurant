@@ -1,22 +1,34 @@
+import './style.css'
 import {homePage} from './home.js'
 import {menuPage} from './menu.js'
 import {aboutPage} from './about.js'
 
-homePage()  // Load the home page first
+homePage()
 
-// Nav bar functionality
 const homeButton = document.querySelector('button#home')
 const menuButton = document.querySelector('button#menu')
 const aboutButton = document.querySelector('button#about')
+const buttons = [homeButton, menuButton, aboutButton]
 
-homeButton.addEventListener('click', () => {
-    homePage()
-})
+const tabClicked = evt => {  // Helper to indicate which tab is open in the nav
+    for (let btn of buttons) {
+        btn.disabled = false
+    }
+    evt.target.disabled = true
+}
 
-menuButton.addEventListener('click', () => {
-    menuPage()
-})
-
-aboutButton.addEventListener('click', () => {
-    aboutPage()
-})
+for (let btn of buttons) {
+    btn.addEventListener('click', (event) => {
+        switch (btn) {
+            case homeButton:
+                homePage()
+                break
+            case menuButton:
+                menuPage()
+                break
+            case aboutButton:
+                aboutPage()
+        }
+        tabClicked(event)
+    })
+}

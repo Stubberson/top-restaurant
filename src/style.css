@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*
+  Josh Comeau's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* --- RESET END --- */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: ghostwhite;
+}
+
+nav {
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+    background-color: white;
+    border-bottom: solid 0.5px grey;
+    box-shadow: 0px 10px 10px rgb(230, 230, 237);
+}
+
+button {
+    width: max-content;
+    padding: 0.5em 1em;
+    
+    background-color: inherit;
+    border: none;
+
+    color: darkslategray;
+
+    transition-duration: 1s;
+    transition-property: color;
+}
+
+button:hover {
+    color: black;
+    cursor: pointer;
+    border-bottom: inset 2px black;
+    border-radius: 0%;
+    margin-bottom: -2px;
+}
+
+button:disabled {
+    border-bottom: inset 2px black;
+    border-radius: 0%;
+    margin-bottom: -2px;
+}
+
+header > div {
+    display: flex;
+    gap: 4em;
+    padding: 2em;
+}
+
+header > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img {
+    width: 480px;
+    justify-self: center;
+}

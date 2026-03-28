@@ -1,6 +1,6 @@
 // webpack.config.js
-import HtmlWebpackPlugin from "html-webpack-plugin";
-import path from "node:path";
+import HtmlWebpackPlugin from "html-webpack-plugin"
+import path from "node:path"
 
 export default {
   mode: "development",
@@ -8,7 +8,7 @@ export default {
   output: {
     filename: "main.js",
     path: path.resolve(import.meta.dirname, "dist"),
-    clean: true,
+    clean: true
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -20,7 +20,11 @@ export default {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource"
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"]
       }
     ]
   }
-};
+}
